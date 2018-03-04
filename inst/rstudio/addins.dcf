@@ -1,0 +1,9 @@
+Name: Dispatch Job
+Description: Dispatch a job using Nohup
+Binding: dispatch_job
+Interactive: false
+
+Name: Kill Job (subliminal)
+Description: Kill a job using Nohup
+Binding: kill_jobs
+Interactive: false
