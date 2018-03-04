@@ -25,5 +25,5 @@ dispatch_job <- function(){
 kill_jobs <- function(){
   file <- as.character(rstudioapi::getSourceEditorContext()$path)
   kill_command <- as.character(paste0("kill $(ps -aux | sort -k1r | awk '$14==\"--file=",file,"\"{print $2}')"))
-  system(kill_command)
+  rstudioapi::showDialog(title = 'Job Killed',message = 'Nice!',url = 'Job is kill')
 }
